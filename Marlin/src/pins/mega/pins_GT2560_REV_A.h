@@ -82,8 +82,8 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN                             8
-#define TEMP_1_PIN                             9
+#define TEMP_0_PIN                             9  // swapped with TEMP_1_PIN because its broken
+#define TEMP_1_PIN                             8 // swapped with TEMP_0_PIN
 #define TEMP_BED_PIN                          10
 
 //
