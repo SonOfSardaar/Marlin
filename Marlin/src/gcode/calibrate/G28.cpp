@@ -145,6 +145,7 @@
     else {
       LCD_MESSAGE(MSG_ZPROBE_OUT);
       SERIAL_ECHO_MSG(STR_ZPROBE_OUT_SER);
+      SERIAL_ECHO_MSG("Dest:[", destination.x, ",", destination.y,",", current_position.z,"]");
     }
   }
 

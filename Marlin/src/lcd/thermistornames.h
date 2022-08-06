@@ -102,6 +102,10 @@
   #define THERMISTOR_NAME "Pt100 UltiMB 5v"
 #elif THERMISTOR_ID == 21
   #define THERMISTOR_NAME "Pt100 UltiMB 3.3v"
+#elif THERMISTOR_ID == 22
+  #define THERMISTOR_NAME "GTM32 Pro vB Stock Hotend 3.3v"
+#elif THERMISTOR_ID == 23
+  #define THERMISTOR_NAME "GTM32 Pro vB Stock Bed 3.3v"
 #elif THERMISTOR_ID == 201
   #define THERMISTOR_NAME "Pt100 OverLord"
 #elif THERMISTOR_ID == 60

@@ -90,10 +90,10 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN                           2
-#define HEATER_1_PIN                           3
+#define HEATER_1_PIN                           7 // Actual 3 we just swapping with fan, we dont use heater 1
 #define HEATER_BED_PIN                         4
 #ifndef FAN_PIN
-  #define FAN_PIN                              7
+  #define FAN_PIN                              3 // Actual: 7 , we using heater_1 pin instead because our is broken
 #endif
 
 //
