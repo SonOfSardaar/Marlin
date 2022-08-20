@@ -642,10 +642,10 @@
     #define DEFAULT_Ki_LIST {   3.61,   3.61 }
     #define DEFAULT_Kd_LIST { 145.39, 145.39 }
   #else
-    //301 P15 I0.76 D70
-    #define DEFAULT_Kp 15
-    #define DEFAULT_Ki 0.76
-    #define DEFAULT_Kd 70
+    //301 P16.20 I2.80 D160.00
+    #define DEFAULT_Kp 16.20
+    #define DEFAULT_Ki 2.80
+    #define DEFAULT_Kd 160
   #endif
 #endif
 
@@ -1446,7 +1446,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 40, -12, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 40, -12, 0.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1456,7 +1456,7 @@
 #define XY_PROBE_FEEDRATE (300*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_FEEDRATE_FAST (120*60)
+#define Z_PROBE_FEEDRATE_FAST (100*60)
 
 // Feedrate (mm/min) for the "accurate" probe of each point
 #define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 2)
@@ -1506,8 +1506,8 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 3
-//#define EXTRA_PROBING    1
+#define MULTIPLE_PROBING 2
+#define EXTRA_PROBING    1
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
